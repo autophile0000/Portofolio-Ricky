@@ -1,0 +1,6 @@
+/* App.css - Empty as we use index.css for global styles and component-specific styles if needed */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
