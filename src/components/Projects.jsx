@@ -4,19 +4,19 @@ const Projects = () => {
   const projects = [
     {
       title: 'Auto-Sentinel Framework',
-      description: 'A custom Playwright-based framework with automated visual regression and accessibility testing.',
+      description: 'Framework kustom berbasis Playwright yang dilengkapi dengan pengujian regresi visual dan aksesibilitas otomatis.',
       tags: ['Playwright', 'TypeScript', 'Axe-core'],
       type: 'Automation'
     },
     {
       title: 'Perf-Load Suite',
-      description: 'Distributed performance testing suite capable of simulating 10k concurrent users.',
+      description: 'Instrumen pengujian performa terdistribusi yang mampu mensimulasikan ribuan pengguna bersamaan untuk menguji skalabilitas sistem.',
       tags: ['JMeter', 'Docker', 'AWS'],
       type: 'Performance'
     },
     {
       title: 'Guardian CI/CD Pipeline',
-      description: 'Automated quality gates integrated into GitHub Actions with real-time Slack reporting.',
+      description: 'Penyusunan pipeline CI/CD dengan quality gates otomatis dan pelaporan Slack secara real-time untuk mempercepat siklus rilis.',
       tags: ['GitHub Actions', 'Docker', 'Slack API'],
       type: 'DevOps'
     }
@@ -26,8 +26,10 @@ const Projects = () => {
     <section id="projects" className="section-padding">
       <div className="container">
         <div style={{textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)'}}>
-          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Selected <span className="gradient-text">Work</span></h2>
-          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>A showcase of my recent automation and testing projects.</p>
+          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Featured <span className="gradient-text">Portfolio</span></h2>
+          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>
+            Beberapa proyek pengujian dan otomasi yang pernah saya kembangkan.
+          </p>
         </div>
 
         <div style={{
@@ -54,7 +56,7 @@ const Projects = () => {
               </div>
               <div style={{padding: '2rem'}}>
                 <h3 style={{fontSize: '1.4rem', marginBottom: '1rem'}}>{project.title}</h3>
-                <p style={{color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '0.95rem'}}>
+                <p style={{color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6'}}>
                   {project.description}
                 </p>
                 <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem', marginTop: 'auto'}}>

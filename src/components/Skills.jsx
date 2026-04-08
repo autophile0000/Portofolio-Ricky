@@ -2,20 +2,22 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    { title: 'Automation', tools: ['Playwright', 'Selenium', 'Cypress', 'Appium'], icon: '⚡' },
-    { title: 'Frameworks', tools: ['JUnit', 'TestNG', 'PyTest', 'Robot'], icon: '🏗️' },
-    { title: 'CI/CD', tools: ['Jenkins', 'GitHub Actions', 'GitLab CI'], icon: '🔄' },
-    { title: 'Performance', tools: ['JMeter', 'k6', 'Lighthouse'], icon: '📈' },
-    { title: 'API Testing', tools: ['Postman', 'RestAssured', 'SoapUI'], icon: '🔗' },
-    { title: 'Management', tools: ['Jira', 'TestRail', 'Zephyr'], icon: '📋' },
+    { title: 'Automation Testing', tools: ['Playwright', 'Selenium', 'Cypress', 'Appium'], icon: '⚡' },
+    { title: 'QA Frameworks', tools: ['JUnit', 'TestNG', 'PyTest', 'Robot'], icon: '🏗️' },
+    { title: 'CI/CD Pipelines', tools: ['Jenkins', 'GitHub Actions', 'GitLab CI'], icon: '🔄' },
+    { title: 'Performance Testing', tools: ['JMeter', 'k6', 'Lighthouse'], icon: '📈' },
+    { title: 'API & Integration', tools: ['Postman', 'RestAssured', 'SoapUI'], icon: '🔗' },
+    { title: 'Test Management', tools: ['Jira', 'TestRail', 'Zephyr'], icon: '📋' },
   ];
 
   return (
     <section id="skills" className="section-padding" style={{background: 'var(--bg-secondary)'}}>
       <div className="container">
         <div style={{textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)'}}>
-          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Technical <span className="gradient-text">Arsenal</span></h2>
-          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>Tools and technologies I use to maintain high quality standards.</p>
+          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Technical <span className="gradient-text">Expertise</span></h2>
+          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>
+            Daftar teknologi dan metodologi yang saya gunakan untuk menjamin standar kualitas tertinggi.
+          </p>
         </div>
         
         <div style={{

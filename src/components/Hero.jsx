@@ -22,32 +22,33 @@ const Hero = () => {
             letterSpacing: '2px',
             marginBottom: '1rem',
             fontWeight: '600'
-          }}>GUARDIAN OF QUALITY</h2>
+          }}>SOFTWARE QUALITY ASSURANCE</h2>
           <h1 style={{
             fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
             lineHeight: '1.1',
             marginBottom: '1.5rem',
             fontWeight: '700'
           }}>
-            Ensuring <span className="gradient-text">Excellence</span> In Every Pixel.
+            Ensuring <span className="gradient-text">Quality</span>. Delivering Excellence.
           </h1>
           <p style={{
             fontSize: 'clamp(1rem, 1.5vw, 1.1rem)',
             color: 'var(--text-dim)',
             marginBottom: '2.5rem',
-            maxWidth: '550px'
+            maxWidth: '550px',
+            lineHeight: '1.8'
           }}>
-            Hi, I'm Ricky Prasetyo. A passionate QA Engineer dedicated to breaking software so you can build it better. Specializing in automation frameworks and robust testing strategies.
+            Halo, saya Ricky Prasetyo. Seorang QA Engineer yang berdedikasi untuk membantu bisnis membangun produk digital yang bebas bug melalui strategi pengujian yang komprehensif dan efisien.
           </p>
           <div className="hero-btns" style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem'}}>
-            <a href="#projects" className="btn-primary">View Projects</a>
+            <a href="#projects" className="btn-primary">Lihat Proyek</a>
             <a href="#contact" className="glass-card" style={{
               padding: '0.8rem 1.5rem',
               borderRadius: '12px',
               fontWeight: '600',
               display: 'flex',
               alignItems: 'center'
-            }}>Contact Me</a>
+            }}>Hubungi Saya</a>
           </div>
         </div>
 
@@ -89,33 +90,73 @@ const Hero = () => {
               <div style={{marginLeft: '0.5rem', fontSize: '0.6rem', color: 'var(--text-dim)', letterSpacing: '1px'}}>METRICS.YAML</div>
             </div>
             
-            {/* Code Content */}
+            {/* Quality Dashboard Content */}
             <div style={{
-              padding: 'clamp(1rem, 3vw, 2rem)',
+              padding: 'clamp(1.5rem, 4vw, 2.5rem)',
               textAlign: 'left',
-              fontFamily: 'var(--mono)',
-              fontSize: 'clamp(0.75rem, 1.2vw, 0.9rem)',
-              lineHeight: '1.8',
-              overflowX: 'auto'
             }}>
-              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>1</span> <span style={{color: '#6272a4'}}>Quality Assurance Metrics</span></div>
-              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>2</span> <span style={{color: '#ff79c6'}}>metrics</span>:</div>
-              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
-                <span style={{color: 'var(--text-dim)'}}>3</span> <span style={{color: '#50fa7b'}}>test_coverage</span>: <span style={{color: '#bd93f9'}}>98.5%</span>
+              <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '0.8rem', 
+                marginBottom: '1.5rem',
+                borderBottom: '1px solid var(--glass-border)',
+                paddingBottom: '1rem'
+              }}>
+                <div style={{
+                  width: '12px', 
+                  height: '12px', 
+                  borderRadius: '50%', 
+                  background: '#27c93f', 
+                  boxShadow: '0 0 10px #27c93f'
+                }}></div>
+                <span style={{fontWeight: '600', fontSize: '0.9rem', color: 'var(--text-bright)'}}>LAPORAN KUALITAS SISTEM</span>
               </div>
-              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
-                <span style={{color: 'var(--text-dim)'}}>4</span> <span style={{color: '#50fa7b'}}>bugs_found</span>: <span style={{color: '#bd93f9'}}>1242</span>
+
+              <div style={{display: 'flex', flexDirection: 'column', gap: '1.2rem'}}>
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <span style={{fontSize: '1.2rem'}}>🛡️</span>
+                    <div>
+                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Cakupan Pengujian</div>
+                      <div style={{fontSize: '1rem', fontWeight: '600', color: 'var(--primary)'}}>98.5% Terverifikasi</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <span style={{fontSize: '1.2rem'}}>🔍</span>
+                    <div>
+                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Bug Terdeteksi & Diperbaiki</div>
+                      <div style={{fontSize: '1rem', fontWeight: '600', color: 'var(--primary)'}}>1,242 Masalah Selesai</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <span style={{fontSize: '1.2rem'}}>🚀</span>
+                    <div>
+                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Status Deployment (CI/CD)</div>
+                      <div style={{fontSize: '1rem', fontWeight: '600', color: '#27c93f'}}>Siap Diluncurkan</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
-                <span style={{color: 'var(--text-dim)'}}>5</span> <span style={{color: '#50fa7b'}}>ci_cd_status</span>: <span style={{color: '#f1fa8c'}}>"passing"</span>
-              </div>
-              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
-                <span style={{color: 'var(--text-dim)'}}>6</span> <span style={{color: '#50fa7b'}}>last_scan</span>: <span style={{color: '#f1fa8c'}}>"{(new Date()).toLocaleDateString()}"</span>
-              </div>
-              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>7</span> <span style={{color: '#6272a4'}}>System Status: Ready</span></div>
-              <div style={{marginTop: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.4rem'}}>
-                <div style={{width: '6px', height: '6px', borderRadius: '50%', background: '#27c93f', boxShadow: '0 0 10px #27c93f'}}></div>
-                <span style={{fontSize: '0.7rem', color: '#27c93f'}}>SYSTEMS ONLINE</span>
+
+              <div style={{
+                marginTop: '1.5rem', 
+                padding: '0.8rem', 
+                background: 'rgba(39, 201, 63, 0.1)', 
+                borderRadius: '8px',
+                textAlign: 'center',
+                fontSize: '0.8rem',
+                color: '#27c93f',
+                fontWeight: '500',
+                border: '1px solid rgba(39, 201, 63, 0.2)'
+              }}>
+                Aman untuk Produksi • {(new Date()).toLocaleDateString('id-ID')}
               </div>
             </div>
           </div>

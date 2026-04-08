@@ -39,7 +39,7 @@ const Navbar = () => {
           fontFamily: 'var(--font-heading)',
           color: 'var(--primary)'
         }}>
-          Ricky Prasetyo<span style={{color: 'var(--text-bright)'}}>.</span>
+          Ricky Prasetyo<span style={{ color: 'var(--text-bright)' }}></span>
         </div>
 
         {/* Desktop Nav */}
@@ -52,11 +52,11 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.name}><a href={link.href}>{link.name}</a></li>
           ))}
-          <li><a href="#contact" className="btn-primary" style={{padding: '0.5rem 1.2rem'}}>Hire Me</a></li>
+          <li><a href="#contact" className="btn-primary" style={{ padding: '0.5rem 1.2rem' }}>Hire Me</a></li>
         </ul>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="mobile-toggle"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -68,23 +68,23 @@ const Navbar = () => {
           }}
         >
           <span style={{
-            width: '25px', 
-            height: '2px', 
-            background: 'var(--primary)', 
+            width: '25px',
+            height: '2px',
+            background: 'var(--primary)',
             transition: 'var(--transition)',
             transform: isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none'
           }}></span>
           <span style={{
-            width: '25px', 
-            height: '2px', 
-            background: 'var(--primary)', 
+            width: '25px',
+            height: '2px',
+            background: 'var(--primary)',
             transition: 'var(--transition)',
             opacity: isOpen ? 0 : 1
           }}></span>
           <span style={{
-            width: '25px', 
-            height: '2px', 
-            background: 'var(--primary)', 
+            width: '25px',
+            height: '2px',
+            background: 'var(--primary)',
             transition: 'var(--transition)',
             transform: isOpen ? 'rotate(-45deg) translate(6px, -7px)' : 'none'
           }}></span>
@@ -111,26 +111,27 @@ const Navbar = () => {
         visibility: isOpen ? 'visible' : 'hidden'
       }}>
         {navLinks.map((link) => (
-          <a 
-            key={link.name} 
-            href={link.href} 
+          <a
+            key={link.name}
+            href={link.href}
             onClick={() => setIsOpen(false)}
-            style={{fontSize: '1.5rem', fontWeight: '600'}}
+            style={{ fontSize: '1.5rem', fontWeight: '600' }}
           >
             {link.name}
           </a>
         ))}
-        <a 
-          href="#contact" 
-          className="btn-primary" 
+        <a
+          href="#contact"
+          className="btn-primary"
           onClick={() => setIsOpen(false)}
-          style={{padding: '1rem 2rem', fontSize: '1.2rem'}}
+          style={{ padding: '1rem 2rem', fontSize: '1.2rem' }}
         >
           Hire Me
         </a>
       </div>
 
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .navbar {
           background: transparent;
         }
