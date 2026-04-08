@@ -15,7 +15,7 @@ const Hero = () => {
         gap: '2rem',
         alignItems: 'center'
       }}>
-        <div className="hero-content fade-in" style={{zIndex: 1}}>
+        <div className="hero-content fade-in" style={{ zIndex: 1 }}>
           <h2 style={{
             fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
             color: 'var(--primary)',
@@ -40,7 +40,7 @@ const Hero = () => {
           }}>
             Halo, saya Ricky Prasetyo. Seorang QA Engineer yang berdedikasi untuk membantu bisnis membangun produk digital yang bebas bug melalui strategi pengujian yang komprehensif dan efisien.
           </p>
-          <div className="hero-btns" style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem'}}>
+          <div className="hero-btns" style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
             <a href="#projects" className="btn-primary">Lihat Proyek</a>
             <a href="#contact" className="glass-card" style={{
               padding: '0.8rem 1.5rem',
@@ -67,7 +67,7 @@ const Hero = () => {
             transform: 'translate(-50%, -50%)',
             zIndex: -1
           }}></div>
-          
+
           <div className="glass-card" style={{
             padding: '0',
             overflow: 'hidden',
@@ -84,71 +84,71 @@ const Hero = () => {
               gap: '0.5rem',
               borderBottom: '1px solid rgba(255,255,255,0.05)'
             }}>
-              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56'}}></div>
-              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e'}}></div>
-              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f'}}></div>
-              <div style={{marginLeft: '0.5rem', fontSize: '0.6rem', color: 'var(--text-dim)', letterSpacing: '1px'}}>METRICS.YAML</div>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56' }}></div>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e' }}></div>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f' }}></div>
+              <div style={{ marginLeft: '0.5rem', fontSize: '0.6rem', color: 'var(--text-dim)', letterSpacing: '1px' }}>METRICS</div>
             </div>
-            
+
             {/* Quality Dashboard Content */}
             <div style={{
               padding: 'clamp(1.5rem, 4vw, 2.5rem)',
               textAlign: 'left',
             }}>
               <div style={{
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '0.8rem', 
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.8rem',
                 marginBottom: '1.5rem',
                 borderBottom: '1px solid var(--glass-border)',
                 paddingBottom: '1rem'
               }}>
                 <div style={{
-                  width: '12px', 
-                  height: '12px', 
-                  borderRadius: '50%', 
-                  background: '#27c93f', 
+                  width: '12px',
+                  height: '12px',
+                  borderRadius: '50%',
+                  background: '#27c93f',
                   boxShadow: '0 0 10px #27c93f'
                 }}></div>
-                <span style={{fontWeight: '600', fontSize: '0.9rem', color: 'var(--text-bright)'}}>LAPORAN KUALITAS SISTEM</span>
+                <span style={{ fontWeight: '600', fontSize: '0.9rem', color: 'var(--text-bright)' }}>LAPORAN KUALITAS SISTEM</span>
               </div>
 
-              <div style={{display: 'flex', flexDirection: 'column', gap: '1.2rem'}}>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                    <span style={{fontSize: '1.2rem'}}>🛡️</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>🛡️</span>
                     <div>
-                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Cakupan Pengujian</div>
-                      <div style={{fontSize: '1rem', fontWeight: '600', color: 'var(--primary)'}}>98.5% Terverifikasi</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>Cakupan Pengujian</div>
+                      <div style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--primary)' }}>98.5% Terverifikasi</div>
                     </div>
                   </div>
                 </div>
 
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                    <span style={{fontSize: '1.2rem'}}>🔍</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>🔍</span>
                     <div>
-                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Bug Terdeteksi & Diperbaiki</div>
-                      <div style={{fontSize: '1rem', fontWeight: '600', color: 'var(--primary)'}}>1,242 Masalah Selesai</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>Bug Terdeteksi & Diperbaiki</div>
+                      <div style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--primary)' }}>1,242 Masalah Selesai</div>
                     </div>
                   </div>
                 </div>
 
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                    <span style={{fontSize: '1.2rem'}}>🚀</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>🚀</span>
                     <div>
-                      <div style={{fontSize: '0.75rem', color: 'var(--text-dim)'}}>Status Deployment (CI/CD)</div>
-                      <div style={{fontSize: '1rem', fontWeight: '600', color: '#27c93f'}}>Siap Diluncurkan</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>Status Deployment (CI/CD)</div>
+                      <div style={{ fontSize: '1rem', fontWeight: '600', color: '#27c93f' }}>Siap Diluncurkan</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div style={{
-                marginTop: '1.5rem', 
-                padding: '0.8rem', 
-                background: 'rgba(39, 201, 63, 0.1)', 
+                marginTop: '1.5rem',
+                padding: '0.8rem',
+                background: 'rgba(39, 201, 63, 0.1)',
                 borderRadius: '8px',
                 textAlign: 'center',
                 fontSize: '0.8rem',
@@ -162,7 +162,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @media (max-width: 968px) {
           #home .container {
             grid-template-columns: 1fr;
