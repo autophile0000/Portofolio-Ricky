@@ -25,15 +25,15 @@ const Projects = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="container">
-        <div style={{textAlign: 'center', marginBottom: '4rem'}}>
-          <h2 style={{fontSize: '2.5rem', marginBottom: '1rem'}}>Selected <span className="gradient-text">Work</span></h2>
-          <p style={{color: 'var(--text-dim)'}}>A showcase of my recent automation and testing project.</p>
+        <div style={{textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)'}}>
+          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Selected <span className="gradient-text">Work</span></h2>
+          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>A showcase of my recent automation and testing projects.</p>
         </div>
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-          gap: '2.5rem'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(280px, 30vw, 350px), 1fr))',
+          gap: 'clamp(1.5rem, 5vw, 2.5rem)'
         }}>
           {projects.map((project, index) => (
             <div key={index} className="glass-card" style={{

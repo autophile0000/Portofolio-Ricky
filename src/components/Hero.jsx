@@ -6,24 +6,25 @@ const Hero = () => {
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
-      paddingTop: '8rem'
+      paddingTop: '6rem',
+      paddingBottom: '4rem'
     }}>
       <div className="container" style={{
         display: 'grid',
-        gridTemplateColumns: '1.2fr 1fr',
-        gap: '4rem',
+        gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)',
+        gap: '2rem',
         alignItems: 'center'
       }}>
-        <div className="hero-content fade-in">
+        <div className="hero-content fade-in" style={{zIndex: 1}}>
           <h2 style={{
-            fontSize: '1.2rem',
+            fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
             color: 'var(--primary)',
             letterSpacing: '2px',
             marginBottom: '1rem',
             fontWeight: '600'
           }}>GUARDIAN OF QUALITY</h2>
           <h1 style={{
-            fontSize: 'max(4rem, 5vw)',
+            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
             lineHeight: '1.1',
             marginBottom: '1.5rem',
             fontWeight: '700'
@@ -31,29 +32,33 @@ const Hero = () => {
             Ensuring <span className="gradient-text">Excellence</span> In Every Pixel.
           </h1>
           <p style={{
-            fontSize: '1.1rem',
+            fontSize: 'clamp(1rem, 1.5vw, 1.1rem)',
             color: 'var(--text-dim)',
             marginBottom: '2.5rem',
-            maxWidth: '500px'
+            maxWidth: '550px'
           }}>
             Hi, I'm Ricky Prasetyo. A passionate QA Engineer dedicated to breaking software so you can build it better. Specializing in automation frameworks and robust testing strategies.
           </p>
-          <div style={{display: 'flex', gap: '1.5rem'}}>
+          <div className="hero-btns" style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem'}}>
             <a href="#projects" className="btn-primary">View Projects</a>
             <a href="#contact" className="glass-card" style={{
               padding: '0.8rem 1.5rem',
               borderRadius: '12px',
-              fontWeight: '600'
+              fontWeight: '600',
+              display: 'flex',
+              alignItems: 'center'
             }}>Contact Me</a>
           </div>
         </div>
+
         <div className="hero-visual fade-in" style={{
           position: 'relative',
-          animationDelay: '0.2s'
+          animationDelay: '0.2s',
+          width: '100%'
         }}>
           <div style={{
-            width: '120%',
-            aspectRatio: '1',
+            width: '100%',
+            paddingBottom: '100%',
             background: 'radial-gradient(circle, var(--primary-glow) 0%, transparent 60%)',
             position: 'absolute',
             top: '50%',
@@ -66,49 +71,51 @@ const Hero = () => {
             padding: '0',
             overflow: 'hidden',
             boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
-            border: '1px solid rgba(255,255,255,0.1)'
+            border: '1px solid rgba(255,255,255,0.1)',
+            maxWidth: '100%'
           }}>
             {/* Window Header */}
             <div style={{
               background: 'rgba(255,255,255,0.05)',
-              padding: '0.8rem 1.2rem',
+              padding: '0.6rem 1rem',
               display: 'flex',
               alignItems: 'center',
               gap: '0.5rem',
               borderBottom: '1px solid rgba(255,255,255,0.05)'
             }}>
-              <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f56'}}></div>
-              <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ffbd2e'}}></div>
-              <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#27c93f'}}></div>
-              <div style={{marginLeft: '1rem', fontSize: '0.7rem', color: 'var(--text-dim)', letterSpacing: '1px'}}>METRICS.YAML</div>
+              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56'}}></div>
+              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e'}}></div>
+              <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f'}}></div>
+              <div style={{marginLeft: '0.5rem', fontSize: '0.6rem', color: 'var(--text-dim)', letterSpacing: '1px'}}>METRICS.YAML</div>
             </div>
             
             {/* Code Content */}
             <div style={{
-              padding: '2rem',
+              padding: 'clamp(1rem, 3vw, 2rem)',
               textAlign: 'left',
               fontFamily: 'var(--mono)',
-              fontSize: '0.95rem',
-              lineHeight: '1.8'
+              fontSize: 'clamp(0.75rem, 1.2vw, 0.9rem)',
+              lineHeight: '1.8',
+              overflowX: 'auto'
             }}>
-              <div><span style={{color: 'var(--text-dim)'}}>1</span> <span style={{color: '#6272a4'}}>Quality Assurance Metrics</span></div>
-              <div><span style={{color: 'var(--text-dim)'}}>2</span> <span style={{color: '#ff79c6'}}>metrics</span>:</div>
-              <div style={{paddingLeft: '1.5rem'}}>
+              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>1</span> <span style={{color: '#6272a4'}}>Quality Assurance Metrics</span></div>
+              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>2</span> <span style={{color: '#ff79c6'}}>metrics</span>:</div>
+              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
                 <span style={{color: 'var(--text-dim)'}}>3</span> <span style={{color: '#50fa7b'}}>test_coverage</span>: <span style={{color: '#bd93f9'}}>98.5%</span>
               </div>
-              <div style={{paddingLeft: '1.5rem'}}>
+              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
                 <span style={{color: 'var(--text-dim)'}}>4</span> <span style={{color: '#50fa7b'}}>bugs_found</span>: <span style={{color: '#bd93f9'}}>1242</span>
               </div>
-              <div style={{paddingLeft: '1.5rem'}}>
+              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
                 <span style={{color: 'var(--text-dim)'}}>5</span> <span style={{color: '#50fa7b'}}>ci_cd_status</span>: <span style={{color: '#f1fa8c'}}>"passing"</span>
               </div>
-              <div style={{paddingLeft: '1.5rem'}}>
+              <div style={{paddingLeft: '1.2rem', whiteSpace: 'nowrap'}}>
                 <span style={{color: 'var(--text-dim)'}}>6</span> <span style={{color: '#50fa7b'}}>last_scan</span>: <span style={{color: '#f1fa8c'}}>"{(new Date()).toLocaleDateString()}"</span>
               </div>
-              <div><span style={{color: 'var(--text-dim)'}}>7</span> <span style={{color: '#6272a4'}}>System Status: Ready</span></div>
-              <div style={{marginTop: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-                <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f', boxShadow: '0 0 10px #27c93f'}}></div>
-                <span style={{fontSize: '0.8rem', color: '#27c93f'}}>SYSTEMS ONLINE</span>
+              <div style={{whiteSpace: 'nowrap'}}><span style={{color: 'var(--text-dim)'}}>7</span> <span style={{color: '#6272a4'}}>System Status: Ready</span></div>
+              <div style={{marginTop: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.4rem'}}>
+                <div style={{width: '6px', height: '6px', borderRadius: '50%', background: '#27c93f', boxShadow: '0 0 10px #27c93f'}}></div>
+                <span style={{fontSize: '0.7rem', color: '#27c93f'}}>SYSTEMS ONLINE</span>
               </div>
             </div>
           </div>
@@ -120,11 +127,20 @@ const Hero = () => {
             grid-template-columns: 1fr;
             text-align: center;
           }
+          .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
           .hero-content p {
             margin-inline: auto;
           }
-          .hero-content div {
+          .hero-btns {
             justify-content: center;
+          }
+          .hero-visual {
+            max-width: 500px;
+            margin: 2rem auto 0;
           }
         }
       `}} />

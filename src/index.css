@@ -69,7 +69,13 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 .glass-card {
@@ -79,6 +85,7 @@ button {
   border: 1px solid var(--glass-border);
   border-radius: 16px;
   transition: var(--transition);
+  height: 100%;
 }
 
 .glass-card:hover {

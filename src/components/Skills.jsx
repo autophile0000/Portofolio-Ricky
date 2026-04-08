@@ -13,15 +13,15 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding" style={{background: 'var(--bg-secondary)'}}>
       <div className="container">
-        <div style={{textAlign: 'center', marginBottom: '4rem'}}>
-          <h2 style={{fontSize: '2.5rem', marginBottom: '1rem'}}>Technical <span className="gradient-text">Arsenal</span></h2>
-          <p style={{color: 'var(--text-dim)'}}>Tools and technologies I use to maintain high quality standards.</p>
+        <div style={{textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)'}}>
+          <h2 style={{fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1rem'}}>Technical <span className="gradient-text">Arsenal</span></h2>
+          <p style={{color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)'}}>Tools and technologies I use to maintain high quality standards.</p>
         </div>
         
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '2rem'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(250px, 30vw, 300px), 1fr))',
+          gap: 'clamp(1rem, 3vw, 2rem)'
         }}>
           {skills.map((skill, index) => (
             <div key={index} className="glass-card" style={{padding: '2rem'}}>
