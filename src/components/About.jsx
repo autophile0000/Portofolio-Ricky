@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   const stats = [
-    { value: '3+', label: 'Tahun Pengalaman' },
-    { value: '50+', label: 'Proyek Selesai' },
+    { value: '4+', label: 'Tahun Pengalaman' },
+    { value: '10+', label: 'Proyek Selesai' },
     { value: '1,242', label: 'Bug Ditemukan' },
     { value: '98%', label: 'Kepuasan Klien' },
   ];
@@ -72,13 +72,24 @@ const About = () => {
             }}>
               Saya adalah seorang <strong style={{color: 'var(--text-main)'}}>Software Quality Assurance Engineer</strong> dengan pengalaman dalam merancang dan mengimplementasikan strategi pengujian yang komprehensif untuk berbagai jenis produk digital.
             </p>
+
             <p style={{
               color: 'var(--text-dim)',
               lineHeight: '1.9',
               marginBottom: '2rem',
               fontSize: '1rem'
             }}>
-              Keahlian saya mencakup <strong style={{color: 'var(--text-main)'}}>automation testing, performance testing,</strong> dan integrasi pipeline <strong style={{color: 'var(--text-main)'}}>CI/CD</strong> — semua bertujuan untuk memastikan setiap produk yang dirilis memenuhi standar kualitas tertinggi.
+              Saya adalah seorang <strong style={{color: 'var(--text-main)'}}>Software Quality Assurance Engineer</strong> dengan pengalaman lebih dari 4 tahun dalam merancang dan mengimplementasikan strategi pengujian yang komprehensif untuk berbagai jenis produk digital. Saya sangat tertarik dengan segala hal tentang IT, Keamanan IT, QA Test Engineer, Programmer & Dukungan IT. Saya adaptif, kreatif, cepat belajar, kooperatif, jujur, dan juga dapat bekerja dalam tim.
+            </p>
+
+            
+            <p style={{
+              color: 'var(--text-dim)',
+              lineHeight: '1.9',
+              marginBottom: '2rem',
+              fontSize: '1rem'
+            }}>
+              Keahlian saya mencakup <strong style={{color: 'var(--text-main)'}}>automation testing dan manual testing</strong>. Semua bertujuan untuk memastikan setiap produk yang dirilis memenuhi standar kualitas tertinggi.
             </p>
 
             <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap'}}>

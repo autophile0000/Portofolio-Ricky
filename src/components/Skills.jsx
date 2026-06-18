@@ -2,12 +2,10 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    { title: 'Automation Testing', tools: ['Playwright', 'Selenium', 'Cypress', 'Appium'], icon: '⚡' },
-    { title: 'QA Frameworks', tools: ['JUnit', 'TestNG', 'PyTest', 'Robot'], icon: '🏗️' },
-    { title: 'CI/CD Pipelines', tools: ['Jenkins', 'GitHub Actions', 'GitLab CI'], icon: '🔄' },
-    { title: 'Performance Testing', tools: ['JMeter', 'k6', 'Lighthouse'], icon: '📈' },
-    { title: 'API & Integration', tools: ['Postman', 'RestAssured', 'SoapUI'], icon: '🔗' },
-    { title: 'Test Management', tools: ['Jira', 'TestRail', 'Zephyr'], icon: '📋' },
+    { title: 'Automation Testing', tools: ['Katalon', 'Selenium', 'Appium'], icon: '⚡' },
+    { title: 'Performance Testing', tools: ['JMeter'], icon: '📈' },
+    { title: 'API & Integration', tools: ['Postman'], icon: '🔗' },
+    { title: 'Test Management', tools: ['Jira', 'Clickup', 'Notion'], icon: '📋' },
   ];
 
   return (
