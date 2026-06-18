@@ -496,41 +496,6 @@ const Certificate = () => {
               <CertCard key={cert.id} cert={cert} onView={setSelectedCert} />
             ))}
           </div>
-
-          {/* Upload guide */}
-          <div style={{
-            marginTop: 'clamp(2.5rem, 5vw, 4rem)',
-            padding: '1.5rem 2rem',
-            background: 'rgba(255,255,255,0.02)',
-            border: '1px dashed rgba(255,255,255,0.12)',
-            borderRadius: '16px',
-            textAlign: 'center',
-          }}>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-dim)', lineHeight: 1.8 }}>
-              💡 <strong style={{ color: 'var(--text-main)' }}>Cara menambahkan PDF:</strong>{' '}
-              Letakkan file PDF di folder{' '}
-              <code style={{
-                background: 'rgba(0,242,255,0.08)',
-                color: 'var(--primary)',
-                padding: '2px 8px',
-                borderRadius: '4px',
-                fontFamily: 'monospace',
-              }}>
-                public/certificates/
-              </code>
-              {' '}lalu isi properti{' '}
-              <code style={{
-                background: 'rgba(0,242,255,0.08)',
-                color: 'var(--primary)',
-                padding: '2px 8px',
-                borderRadius: '4px',
-                fontFamily: 'monospace',
-              }}>
-                pdf
-              </code>
-              {' '}di file <code style={{ fontFamily: 'monospace', color: 'var(--primary)' }}>Certificate.jsx</code>.
-            </p>
-          </div>
         </div>
       </section>
 

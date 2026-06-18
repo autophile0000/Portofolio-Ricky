@@ -33,9 +33,9 @@ function App() {
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Ricky Prasetyo. All rights reserved.</p>
           <div style={{marginTop: '1rem', display: 'flex', justifyContent: 'center', gap: '1.5rem'}}>
-            <a href="#" style={{color: 'var(--text-main)'}}>LinkedIn</a>
-            <a href="#" style={{color: 'var(--text-main)'}}>GitHub</a>
-            <a href="#" style={{color: 'var(--text-main)'}}>Twitter</a>
+            <a href="https://www.linkedin.com/in/ricky-prasetyo/" style={{color: 'var(--text-main)'}}>LinkedIn</a>
+            <a href="https://github.com/autophile0000/" style={{color: 'var(--text-main)'}}>GitHub</a>
+            <a href="https://www.instagram.com/rickyprasetyooo/" style={{color: 'var(--text-main)'}}>Instagram</a>
           </div>
         </div>
       </footer>

@@ -136,16 +136,26 @@ button {
 .navbar { background: transparent; }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 12, 0.85);
-  backdrop-filter: blur(12px);
+  background: rgba(10, 10, 12, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
-.navbar ul li a:hover { color: var(--primary); }
+/* Slightly compress gap on medium screens before hamburger kicks in */
+@media (max-width: 1024px) {
+  .desktop-nav { gap: clamp(0.8rem, 1.5vw, 1.4rem) !important; }
+}
 
 @media (max-width: 768px) {
-  .desktop-nav   { display: none !important; }
-  .mobile-toggle { display: flex !important; }
+  .desktop-nav    { display: none !important; }
+  .desktop-hireme { display: none !important; }
+  .mobile-toggle  { display: flex !important; }
+}
+
+@media (min-width: 769px) {
+  .mobile-toggle { display: none !important; }
 }
 
 /* ═══════════════════════════════════════════
