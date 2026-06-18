@@ -6,6 +6,7 @@ const Skills = () => {
     { title: 'Performance Testing', tools: ['JMeter'], icon: '📈' },
     { title: 'API & Integration', tools: ['Postman'], icon: '🔗' },
     { title: 'Test Management', tools: ['Jira', 'Clickup', 'Notion'], icon: '📋' },
+    { title: 'Web Developer', tools: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP', 'API Integration', 'MySQL'], icon: '🌐' },
   ];
 
   return (

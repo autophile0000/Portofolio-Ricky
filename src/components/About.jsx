@@ -67,15 +67,6 @@ const About = () => {
             <p style={{
               color: 'var(--text-dim)',
               lineHeight: '1.9',
-              marginBottom: '1.2rem',
-              fontSize: '1rem'
-            }}>
-              Saya adalah seorang <strong style={{color: 'var(--text-main)'}}>Software Quality Assurance Engineer</strong> dengan pengalaman dalam merancang dan mengimplementasikan strategi pengujian yang komprehensif untuk berbagai jenis produk digital.
-            </p>
-
-            <p style={{
-              color: 'var(--text-dim)',
-              lineHeight: '1.9',
               marginBottom: '2rem',
               fontSize: '1rem'
             }}>

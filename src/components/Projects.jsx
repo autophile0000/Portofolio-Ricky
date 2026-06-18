@@ -63,7 +63,7 @@ const PROJECTS_DATA = [
     tags: [
       'Test Case Design', 'Smoke Testing', 'Sanity Testing',
       'Bug Reporting', 'SIT', 'Regression Testing',
-      'Functional Testing', 'E2E Testing', 'API Testing',
+      'Functional Testing', 'E2E Testing', 'API Testing', 'DBever',
     ],
     type: 'Web',
     icon: '🏦',
