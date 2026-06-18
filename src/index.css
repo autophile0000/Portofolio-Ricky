@@ -1,38 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════ */
 :root {
   --bg-primary: #0a0a0c;
   --bg-secondary: #121216;
   --bg-accent: #1a1a20;
-  
+
   --primary: #00f2ff;
   --primary-glow: rgba(0, 242, 255, 0.4);
   --secondary: #7000ff;
   --secondary-glow: rgba(112, 0, 255, 0.4);
-  
+
+  --accent: #7000ff;
+
   --text-main: #e1e1e6;
   --text-dim: #a1a1aa;
   --text-bright: #ffffff;
-  
+
   --border-color: rgba(255, 255, 255, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
-  
+
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', sans-serif;
-  
+
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ═══════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--bg-primary);
@@ -53,9 +59,7 @@ a {
   transition: var(--transition);
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
 button {
   cursor: pointer;
@@ -65,18 +69,18 @@ button {
   transition: var(--transition);
 }
 
-/* Utilities */
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 0 2rem;
-  }
-}
+@media (min-width: 480px)  { .container { padding: 0 1.5rem; } }
+@media (min-width: 768px)  { .container { padding: 0 2rem; } }
+@media (min-width: 1024px) { .container { padding: 0 2.5rem; } }
 
 .glass-card {
   background: var(--glass-bg);
@@ -88,11 +92,13 @@ button {
   height: 100%;
 }
 
-.glass-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+@media (min-width: 769px) {
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .gradient-text {
@@ -119,34 +125,147 @@ button {
   box-shadow: 0 6px 20px var(--primary-glow);
 }
 
-.section-padding {
-  padding: 6rem 0;
+.section-padding { padding: 5rem 0; }
+
+@media (max-width: 768px) { .section-padding { padding: 4rem 0; } }
+@media (max-width: 480px) { .section-padding { padding: 3rem 0; } }
+
+/* ═══════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════ */
+.navbar { background: transparent; }
+
+.navbar.scrolled {
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+.navbar ul li a:hover { color: var(--primary); }
+
+@media (max-width: 768px) {
+  .desktop-nav   { display: none !important; }
+  .mobile-toggle { display: flex !important; }
 }
 
-::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+@media (max-width: 968px) {
+  #home .container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-content p { margin-inline: auto; }
+  .hero-btns      { justify-content: center; }
+  .hero-visual    { max-width: 480px; margin: 2rem auto 0; }
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--bg-accent);
-  border-radius: 10px;
+@media (max-width: 480px) {
+  .hero-visual { max-width: 100%; }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+/* ═══════════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════════ */
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
 }
 
-/* Animations */
+/* ═══════════════════════════════════════════
+   SKILLS
+═══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  #skills .glass-card { padding: 1.5rem !important; }
+}
+
+/* ═══════════════════════════════════════════
+   CERTIFICATE MODAL
+═══════════════════════════════════════════ */
+.cert-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cert-modal-inner {
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .cert-modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .cert-modal-inner {
+    border-radius: 20px 20px 0 0;
+    max-height: 92vh;
+    width: 100%;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .form-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .footer-links {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: center;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+═══════════════════════════════════════════ */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--bg-accent); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+/* ═══════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════ */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
+.fade-in { animation: fadeIn 0.8s ease forwards; }
+
+/* ═══════════════════════════════════════════
+   TOUCH — disable hover stuck states
+═══════════════════════════════════════════ */
+@media (hover: none) {
+  .btn-primary:hover { transform: none; }
+  .glass-card:hover  { transform: none; box-shadow: none; }
 }
