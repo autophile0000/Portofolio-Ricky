@@ -7,6 +7,22 @@ import React, { useState } from 'react';
 
 const PROJECTS_DATA = [
   {
+    title: 'Aura Business – Aura AI',
+    company: 'CODE.ID',
+    period: 'Ags 2026 – Present',
+    description:
+      'QA Engineer pada sub-product Aura Business dari platform Aura AI. Bertanggung jawab atas pengujian fungsional, regression testing, serta performance testing menggunakan Grafana K6 untuk memastikan skalabilitas dan stabilitas sistem AI berbasis bisnis.',
+    tags: [
+      'Manual Testing', 'Functional Testing', 'Regression Testing',
+      'Performance Testing', 'Grafana K6', 'Load Testing',
+      'Stress Testing', 'API Testing', 'Bug Reporting',
+    ],
+    type: 'AI Product',
+    icon: '🤖',
+    highlight: true,
+    status: 'Current',
+  },
+  {
     title: 'SuperApp – Badan Gizi Nasional',
     company: 'CODE.ID',
     period: 'Nov 2025 – Present',
@@ -100,9 +116,10 @@ const PROJECTS_DATA = [
   },
 ];
 
-const FILTERS = ['All', 'Mobile & Web', 'Web', 'Mobile'];
+const FILTERS = ['All', 'AI Product', 'Mobile & Web', 'Web', 'Mobile'];
 
 const TYPE_COLORS = {
+  'AI Product': 'linear-gradient(135deg, #a855f7, #ec4899, #f43f5e)',
   'Mobile & Web': 'linear-gradient(135deg, #6366f1, #8b5cf6)',
   Web: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
   Mobile: 'linear-gradient(135deg, #10b981, #059669)',
